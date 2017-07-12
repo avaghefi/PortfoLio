@@ -1,0 +1,2 @@
+#' develop moving average strategy
+#' 
