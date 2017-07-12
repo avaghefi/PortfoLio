@@ -17,7 +17,6 @@ pkg_load <- function(pkg_list){
                      dependencies = TRUE, 
                      quiet = TRUE) 
   } 
-  print('I am here')
   sapply(package_list, 
          require, 
          character.only = TRUE, 

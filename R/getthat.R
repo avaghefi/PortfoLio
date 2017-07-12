@@ -20,6 +20,7 @@ getthat <- function(symbols
   return(data)
 }
 
+#######################################
 # example
 stock_mkt <- c("AMEX", "NASDAQ", "NYSE")
 # stock_mkt <- c("NASDAQ")
@@ -28,8 +29,11 @@ symb <- symb_df$Symbol
 # sample or all
 symb <- c('AMD', 'MSFT', 'APPN', 'CAMT', 'NVDA', 'AAPL', 'SPI', 'UAL', 'LUV', 'UAL', 'TSLA',
           'NFLX', 'FB', 'BABA' )
+stock_obj <- getthat(symb,length = 365)
+# turn it to a data frame
+daily_return <- lst_to_df(stock_obj$daily_return)
+ 
 
-stock_obj <- getthat(symb,length = 60 )
 
-
+#######################################
 
